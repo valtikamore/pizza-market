@@ -53,7 +53,7 @@
     {
       "id": 5,
       "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-      "name": "Crazy Natashoni",
+      "name": "Crazy Pepperoni",
       "types": [0],
       "sizes": [30, 40],
       "price": 5.30,
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-      "name": "Natashoni",
+      "name": "Pepperoni",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 6.30,
