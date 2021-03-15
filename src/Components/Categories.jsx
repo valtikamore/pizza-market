@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 
 
-function Categories ({items}) {
+function Categories ({items,onClickItem}) {
 
     const [activeItem,setActiveItem] = useState(null)
+
     const onSelectItem = (index) => {
         setActiveItem(index)
+        onClickItem(index)
     }
     const categoriesMap = items.map((i,index) => <li
         className={activeItem === index ? 'active' : ''}

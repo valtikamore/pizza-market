@@ -2,12 +2,17 @@ import Categories from "../Components/Categories";
 import SortPopup from "../Components/SortPopUp";
 import React from "react";
 import PizzaBlock from "../Components/PizzaBlock";
+import {useDispatch, useSelector} from "react-redux";
+import pizzas from "../redux/reducers/pizzas";
 
-function Home ({items}) {
+function Home () {
+    const dispatch = useDispatch()
+    const items = useSelector(({items}) => pizzas.items)
     return (
         <div className="container">
             <div className="content__top">
                 <Categories
+                    onClickItem={(name) => console.log(name)}
                     items={
                         [
                             'Meat',
@@ -25,7 +30,7 @@ function Home ({items}) {
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
-                {items.map(i =>
+                {items && items.map(i =>
                     <PizzaBlock key={i.id} {...i} />
                     )}
             </div>
