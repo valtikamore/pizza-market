@@ -1,18 +1,21 @@
 import React from "react";
 import {useState} from "react";
 import classNames from 'classnames'
+import {LoadingPizzas} from "./LoadingPizzas";
 
 function PizzaBlock ({name,imageUrl,price,types,sizes,category,rating}) {
     const avaibleTypes = ['thin','traditional']
     const avaibleSizes = [26,30,40]
     const [activeType, setActiveType] = useState(types[0]);
     const [activeSize, setActiveSize] = useState(sizes[0]);
+
     const onSelectType = (index) => {
         setActiveType(index)
     }
     const onSelectSize = (index) => {
         setActiveSize(index)
     }
+
     return (
         <div className="pizza-block">
             <img
