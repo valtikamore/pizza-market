@@ -1,4 +1,3 @@
-import {act} from "@testing-library/react";
 
 const initialState = {
     items: [],
